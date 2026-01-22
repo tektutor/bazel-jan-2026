@@ -15,4 +15,7 @@ make
 bin/hello
 make clean
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e981d7b5-adbf-489d-8986-4bf6a85b3bb0" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4b541eb1-8605-485a-85f6-de176fde9b52" />
+
 
