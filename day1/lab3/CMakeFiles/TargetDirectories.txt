@@ -1,0 +1,3 @@
+/home/jegan/bazel-jan-2026/day1/lab3/CMakeFiles/hello.dir
+/home/jegan/bazel-jan-2026/day1/lab3/CMakeFiles/edit_cache.dir
+/home/jegan/bazel-jan-2026/day1/lab3/CMakeFiles/rebuild_cache.dir
