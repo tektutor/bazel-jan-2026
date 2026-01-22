@@ -221,6 +221,8 @@ cat WORKSPACE
 cat BUILD
 bazel build hello
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85813344-97bd-4e38-ad9e-8c5144f360b8" />
+
 
 
 
