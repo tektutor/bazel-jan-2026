@@ -28,10 +28,10 @@ make clean
 ## Lab - Install Qt Framework in Ubuntu
 ```
 sudo apt update
-sudo apt install clang lld libclang-dev
-sudo apt-get install build-essential
-sudo apt-get install libfontconfig1
-sudo apt-get install mesa-common-dev
+sudo apt install clang lld libclang-dev -y
+sudo apt-get install build-essential -y
+sudo apt-get install libfontconfig1 -y
+sudo apt-get install mesa-common-dev -y
 sudo apt-get install libglu1-mesa-dev -y
 
 sudo apt install -y qtcreator qtbase5-dev qt5-qmake cmake
@@ -66,6 +66,7 @@ make
 ```
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f749c970-ff91-4319-a30e-0c05da921f1a" />
+
 
 
 
