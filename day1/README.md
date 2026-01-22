@@ -27,8 +27,6 @@ make clean
 
 ## Lab - Install Qt Framework in Ubuntu
 ```
-## Lab - Install Qt Creator in Ubuntu from command-line
-```
 sudo apt update
 sudo apt install clang lld libclang-dev
 sudo apt-get install build-essential
@@ -68,6 +66,7 @@ make
 ```
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f749c970-ff91-4319-a30e-0c05da921f1a" />
+
 
 
 
