@@ -10,7 +10,9 @@ cd ~
 cd bazel-jan-2026
 git pull
 cd Day1/lab1
+cat Makefile
 make
 bin/hello
 make clean
 ```
+
