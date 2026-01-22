@@ -25,6 +25,31 @@ make clean
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e981d7b5-adbf-489d-8986-4bf6a85b3bb0" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4b541eb1-8605-485a-85f6-de176fde9b52" />
 
+## Lab3 - Building a Qt Widgets application using qmake and make utility
+```
+cd ~
+cd bazel-jan-2026
+git pull
+cd day1/lab2
+ls
+tree
+
+#Let's generate a .pro - qt creator project file
+qmake -project
+
+#Edit the lab2.pro file and add the line
+QT += widgets
+
+#Generate Makefile using qmake - qmake takes lab2.pro as input file from current dir
+qmake
+
+cat Makefile
+make
+
+# To run the qt widgets application
+./lab2
+```
+
 
 
 
