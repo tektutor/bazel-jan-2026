@@ -12,7 +12,7 @@ git pull
 cd Day1/lab1
 cat Makefile
 
-# The below command will the c++ application
+# The below command will build the c++ application using make build utility
 make
 
 # The below command will run the c++ hello world application
@@ -24,6 +24,7 @@ make clean
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e981d7b5-adbf-489d-8986-4bf6a85b3bb0" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4b541eb1-8605-485a-85f6-de176fde9b52" />
+
 
 
 
