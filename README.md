@@ -6,5 +6,8 @@
 - Dual/Quad Core Processor
 - Atleast 8GB RAM
 - Atleast 50GB HDD/SSD Free space
-- Bazel, Conan, CMake, JFrog Artifactory OSS(opensource) installed ( We could also install during the training )
+- Bazel, Conan, Make, CMake, JFrog Artifactory OSS(opensource) installed ( We could also install during the training )
+- Any recent version of Docker Community Edition should be sufficient
+- JRE 17 or latest will be ideal
+- C/C++ pre-installed
 </pre>
