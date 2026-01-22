@@ -212,14 +212,16 @@ docker run -d --name artifactory-oss \
 ## Lab - Bazel directory structure
 ```
 cd ~
-mkdir -p bazel-jan-2026/day1
-cd bazel-jan-2026/day1/lab5
+cd bazel-jan-2026
+git pull
+cd day1/lab5
 tree
 #In this lab exercise, we use a emtpy WORKSPACE file - but this is mandatory
 cat WORKSPACE
 cat BUILD
 bazel build hello
 ```
+
 
 
 
