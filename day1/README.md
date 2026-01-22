@@ -202,12 +202,32 @@ cc_library (
 
 ## Lab - Installing JFrog Artifactory open source variant
 ```
-docker run -d --name artifactory-oss \
-  --memory=4g \
-  -p 8082:8082 \
-  -v artifactory-data:/var/opt/jfrog/artifactory \
+docker run -d \
+  --name artifactory \
+  -p 8081:8081 \
+  -v jfrog-artifactory-data:/var/opt/jfrog/artifactory \
   releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
+
+docker ps
+docker logs -f artifactory
 ```
+
+You may access the JFrog Artifactory from web browser at the below URL
+<pre>
+http://172.17.0.2:8082/ui  
+</pre>
+
+Login Credentials
+<pre>
+username - admin
+password - password
+</pre>
+
+When JFrog prompts you to change password
+<pre>
+username - admin
+password - Admin@12345
+</pre>
 
 ## Lab - Bazel directory structure
 ```
@@ -222,6 +242,7 @@ cat BUILD
 bazel build hello
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85813344-97bd-4e38-ad9e-8c5144f360b8" />
+
 
 
 
