@@ -202,24 +202,51 @@ cc_library (
 
 ## Lab - Installing JFrog Artifactory open source variant
 ```
-docker run -d --name artifactory-oss \
-  --memory=4g \
-  -p 8082:8082 \
-  -v artifactory-data:/var/opt/jfrog/artifactory \
+docker run -d \
+  --name artifactory \
+  -p 8081:8081 \
+  -v jfrog-artifactory-data:/var/opt/jfrog/artifactory \
   releases-docker.jfrog.io/jfrog/artifactory-oss:7.77.5
+
+docker ps
+docker logs -f artifactory
 ```
+
+You may access the JFrog Artifactory from web browser at the below URL
+<pre>
+http://172.17.0.2:8082/ui  
+</pre>
+
+Login Credentials
+<pre>
+username - admin
+password - password
+</pre>
+
+When JFrog prompts you to change password
+<pre>
+username - admin
+password - Admin@12345
+</pre>
 
 ## Lab - Bazel directory structure
 ```
 cd ~
-mkdir -p bazel-jan-2026/day1
-cd bazel-jan-2026/day1
-mkdir WORKSPACE
-touch BUILD MODULE.bazel main.cpp hello.h hello.cpp
+cd bazel-jan-2026
+git pull
+cd day1/lab5
 tree
+#In this lab exercise, we have used an emtpy WORKSPACE file - but this is mandatory
+cat WORKSPACE
+cat BUILD
+bazel build hello
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/85813344-97bd-4e38-ad9e-8c5144f360b8" />
 
-<img width="962" height="300" alt="image" src="https://github.com/user-attachments/assets/2007e318-5b6d-4bb6-925b-2cf25c6ba953" />
+
+
+
+
 
 
 
