@@ -1,4 +1,0 @@
-/home/jegan/bazel-jan-2026/day1/lab4/build/Release/CMakeFiles/hello.dir
-/home/jegan/bazel-jan-2026/day1/lab4/build/Release/CMakeFiles/hello-test.dir
-/home/jegan/bazel-jan-2026/day1/lab4/build/Release/CMakeFiles/edit_cache.dir
-/home/jegan/bazel-jan-2026/day1/lab4/build/Release/CMakeFiles/rebuild_cache.dir

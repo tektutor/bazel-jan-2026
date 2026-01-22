@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/hello-test.dir/link.d "CMakeFiles/hello-test.dir/hello.cpp.o" -o hello-test  -lgtest::gtest

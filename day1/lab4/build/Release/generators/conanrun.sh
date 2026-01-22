@@ -1,1 +1,0 @@
-. "/home/jegan/bazel-jan-2026/day1/lab4/build/Release/generators/conanrunenv-release-x86_64.sh"
