@@ -50,6 +50,8 @@ make
 ./lab2
 ```
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f749c970-ff91-4319-a30e-0c05da921f1a" />
+
 
 
 
