@@ -213,13 +213,14 @@ docker run -d --name artifactory-oss \
 ```
 cd ~
 mkdir -p bazel-jan-2026/day1
-cd bazel-jan-2026/day1
-mkdir WORKSPACE
-touch BUILD MODULE.bazel main.cpp hello.h hello.cpp
+cd bazel-jan-2026/day1/lab5
 tree
+#In this lab exercise, we use a emtpy WORKSPACE file - but this is mandatory
+cat WORKSPACE
+cat BUILD
+bazel build hello
 ```
 
-<img width="962" height="300" alt="image" src="https://github.com/user-attachments/assets/2007e318-5b6d-4bb6-925b-2cf25c6ba953" />
 
 
 
