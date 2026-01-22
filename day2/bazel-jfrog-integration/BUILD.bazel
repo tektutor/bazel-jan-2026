@@ -1,0 +1,27 @@
+load("@rules_pkg//pkg:pkg.bzl", "pkg_tar")
+
+# Build the C++ binary
+cc_binary(
+    name = "myapp",
+    srcs = ["src/main.cpp"],
+    visibility = ["//visibility:public"],
+)
+
+# Wrap the binary for packaging
+pkg_tar(
+    name = "myapp_bin_pkg",
+    srcs = [":myapp"],
+    package_dir = "myapp/bin",
+    mode = "0755",
+)
+
+# Create the versioned release tar.gz
+pkg_tar(
+    name = "myapp_release",
+    srcs = [
+        ":myapp_bin_pkg",
+    ],
+    extension = "tar.gz",
+    package_file_name = "myapp-${STABLE_VERSION}-${STABLE_OS}-${STABLE_ARCH}.tar.gz",
+)
+

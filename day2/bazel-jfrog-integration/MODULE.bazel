@@ -1,0 +1,7 @@
+module(
+    name = "bazel_jfrog_integration",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "rules_pkg", version = "1.0.1")
+
