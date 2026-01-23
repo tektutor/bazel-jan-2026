@@ -1,0 +1,11 @@
+sh_binary(
+    name = "deploy",
+    srcs = ["deploy.sh"],
+    visibility = ["//visibility:public"],
+)
+
+sh_binary(
+    name = "download",
+    srcs = ["download.sh"],
+    visibility = ["//visibility:public"],
+)

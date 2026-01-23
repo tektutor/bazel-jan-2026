@@ -1,27 +1,29 @@
+# Load the rules explicitly
+load("@rules_cc//cc:defs.bzl", "cc_binary")
 load("@rules_pkg//pkg:pkg.bzl", "pkg_tar")
 
-# Build the C++ binary
+# Build the binary
 cc_binary(
     name = "myapp",
-    srcs = ["src/main.cpp"],
-    visibility = ["//visibility:public"],
+    srcs = ["main.cpp"],
 )
 
-# Wrap the binary for packaging
-pkg_tar(
-    name = "myapp_bin_pkg",
-    srcs = [":myapp"],
-    package_dir = "myapp/bin",
-    mode = "0755",
+# Optional version file
+genrule(
+    name = "version_file",
+    outs = ["version.txt"],
+    cmd = "echo 1.2.3 > $@",
+    stamp = 1,
 )
 
-# Create the versioned release tar.gz
+# Package the binary
 pkg_tar(
     name = "myapp_release",
     srcs = [
-        ":myapp_bin_pkg",
+        ":myapp",
+        ":version_file",
     ],
-    extension = "tar.gz",
-    package_file_name = "myapp-${STABLE_VERSION}-${STABLE_OS}-${STABLE_ARCH}.tar.gz",
+    package_dir = "/usr/bin",
+    stamp = 1,
 )
 

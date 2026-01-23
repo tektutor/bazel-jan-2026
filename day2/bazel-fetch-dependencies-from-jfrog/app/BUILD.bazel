@@ -1,0 +1,7 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "main_app",
+    srcs = glob(["src/**/*.cpp"]),
+    deps = ["//lib:hello_lib"],  # depends on your header-only lib
+)
