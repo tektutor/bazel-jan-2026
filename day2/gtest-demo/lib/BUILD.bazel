@@ -1,0 +1,9 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+	name = "hello_lib",
+	srcs = ["src/hello.cpp"],
+	hdrs = ["inc/hello.h"],
+	includes = ["inc"], 
+	visibility = ["//visibility:public"],
+)

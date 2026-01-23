@@ -6,7 +6,7 @@ set -euo pipefail
 # -----------------------------
 DEP_TAR="mydep-1.0.0.tar.gz"
 MODULE_FILE="MODULE.bazel"
-ARTIFACTORY_URL="http://172.17.0.3:8082/artifactory/my-repo/"
+ARTIFACTORY_URL="http://172.17.0.2:8082/artifactory/my-repo/"
 ARTIFACT_PREFIX="myapp"
 STATUS_CMD="./tools/status.sh"
 

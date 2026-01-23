@@ -4,7 +4,7 @@ set -euo pipefail
 # ----------------------------
 # Configuration
 # ----------------------------
-ARTIFACTORY_URL="http://172.17.0.3:8082/artifactory/"
+ARTIFACTORY_URL="http://172.17.0.2:8082/artifactory/"
 ARTIFACTORY_REPO="my-repo"
 # JFROG_USER and JFROG_API_KEY should be exported in your environment
 # export JFROG_USER=admin
@@ -29,7 +29,7 @@ fi
 # ----------------------------
 echo "Cleaning Bazel..."
 bazel shutdown
-bazel clean --expunge
+bazel clean --expunge --async
 
 # ----------------------------
 # Build tarball with stamping
